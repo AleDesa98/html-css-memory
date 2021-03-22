@@ -31,38 +31,34 @@ main {
     display: inline-block;
     margin: 1%;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .carta img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    /* visibility: hidden; */
-    display: none;
+    visibility: hidden;
 }
 
 .carta p {
+    display: none;
+}
+
+.carta:hover {
+    background-image: none;
+}
+
+.carta:hover .img {
+    visibility: visible;
+    z-index: 999;
+}
+.carta:hover p {
     position: absolute;
     text-align: center;
     bottom: 5px;
     left: 5px;
     color: #E61A86;
     font-size: 25px;
-    visibility: hidden;
-}
-
-.carta:hover {
-    background-image: none;
-    background-color: white;
-}
-
-.carta:hover .img {
-    /* visibility: visible; */
     display: block;
-}
-.carta:hover p {
-    visibility: visible;
 }
 
 
