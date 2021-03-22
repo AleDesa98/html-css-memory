@@ -32,10 +32,11 @@ main {
     margin: 1%;
     border-radius: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 .carta img {
-    width: 100%;
+    width: 80%;
     visibility: hidden;
 }
 
@@ -45,11 +46,11 @@ main {
 
 .carta:hover {
     background-image: none;
+    background-color: white;
 }
 
-.carta:hover .img {
+.carta:hover img {
     visibility: visible;
-    z-index: 999;
 }
 .carta:hover p {
     position: absolute;
@@ -66,4 +67,5 @@ main {
 footer {
     text-align: center;
     font-size: 20px;
+    margin: 20px;
 }
